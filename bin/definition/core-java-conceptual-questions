@@ -2,32 +2,119 @@ Please answer the below core-java Questions:
 
 
 What jdk contains or composed of and define each components?
+Ans:Java development kit, It includes the jre, a compiler(javac),a loader, archiver, documentation generator.
+
 What is IDE?
+Ans: Integrated development environment is a software suite that consolidates the basic tools developers need to write and test software. 
+
 What are the IDEs available in the market to support java?
+Ans: Eclipse, NetBeans, JCreator, Processing, BlueJ, intellij.
+
 Explain the entire java life cycle.
+Ans: Editor passes through.Java source file, java compiler compiles the code and outputs to .class bytecode file with help of java libraries,
+gets passed onto JVM, which is ran by an operating system with machine code by the host machine. 
+
 what is class?
+Ans: Class is a blueprint or template for creating different objects which defines its properties and behaviors. 
+
 What is object?
+Ans: Objects are the instances of a class which defines the behavior. 
+
 What is the entry point of an application?
+Ans: Entry point is where processor enters a program or a code fragment and execution begins.
+
 Why main is static?
+Ans: Main is static because it can be directly invoked by the class and objects are not must.
+
 What is the difference between an Interface and Abstract class?
+Ans:interface vs abstract. multiple vs single inheritance. no data member vs data member. 
+no constructors vs constructors. no access modifier vs yes. member of interface cant be 
+static vs complete members can. 
+
 Can you make an Object from an Interface and Abstract class ? if not how do you use it ?
+Ans: No, you can a have a class implements that Interface or Abstract class. 
+
 what is Access Specifier?
+Ans: 'public', 'private', are access specifier that defines what information can be accessed.
+
 What is OOP ? Define each feature of java OOP.
+Ans: OOP is object oriented programming, consists of encapsulation, inheritance, polymorphism.
+Encapsulation: hiding data for better data management and hiding implementation. 
+Inheritance: Acquiring the features of a parent class. 
+Polymorphism: Data overloading with passing unit type of data/different combinations. 
+
 What is API? Name list of API that you have used so far.
+Ans: List of java application programming interface. It provides functionality to developer. 
+
 Does java support multiple inheritance?
+Ans: yes
+
 What is method overloading and when it happens?
+Ans: Method overloading is used to increase the readability of the program, and it happens in the Compile time. 
+
 What is method overriding and when it happens?
+Ans: Method overriding is used to provide the specific implementation of the method that is already provided by its super class, and it happens in the Run time.
+
 Explain exceptions in java and how to handle it.
+Ans: Exceptions occur when normal flow of program is interrupted and error message is
+generated. exceptions can be handles with try catch block or some mathematical exceptions can be handled with if else block. 
+
 What is static keyword in java? How it has been used in variables and methods ?
+Ans: When a variable is declared with the keyword static, its called a class variable. All instances share the same copy of the variable.
+A class variable can be accessed directly with the class, without the need to create an instance.
+It is a method which belogns to the class and not to the object(instance). A static method can access only static data. It can not access
+non-static data (instance variable). A static method can call only other static methods and can not call a non-static method from it.
+A static method can be accessed directly by the class name and doesn't need any object
+
 What is final and how it has been used variables and methods?
+Ans: final variable is used to finalize a variable and not be able to change it after, 
+final methods are something that cant be overridden when it gets called by a sub class and
+gets inherited. 
+
 What is final, finally and finalize?
+Ans: Final: Apply restricitons on a class, method or variable,Keyword. finaly: place 
+important code that will be executed whether exception is handled or not, Finalize: Perform
+clean up processing just before object is garbage collected.
+
 What is a constructor ?
+Ans: Specialized method without the return type, that initialize the object.
+
 What is "this" keyword in java ?
+Ans:It can be used inside the Method or constructor of Class. It(this) works as a reference to
+the current Object whose Method or constructor is being invoked. The this keyword can be used
+to refer to any member of the current object from within an instance Method or a constructor.
+
 What is "super" keyword in java?
+Ans: Super refers to the variable of a variable parent class, invokes constructor or method
+of immediate parent class. 
+
 What is JVM stand for ?
+Ans: Java Virtual Machine. 
+
 What version of java are you using?
+Ans: Java 8 
+
 What is JAR stand for ?
+Ans: Java Archive
+
 What is compile time and run time?
+Ans: The source code must be compiled into machine code in order to become and executable program.
+This compilation process is referred to as compile time.(think of a compiler as a translator)
+A compiled program can be opened and run by a user. When an application is running, it is called runtime.
+
 What is heap?
+Ans: Heap is java runtime data area from which memory for all class instances are allocated.
+
 How java manage it's memory?
-What is the difference between String, StringBuffer and StringBuilder?
+Ans:thread stacks and native handles are allocated in memory separate from the heap, as well 
+as JVM internal data structures. The heap is sometimes divided into two areas (or 
+generations) called the nursery (or young space) and the old space. The nursery is a part 
+of the heap reserved for allocation of new objects. When the nursery becomes full, garbage 
+is collected by running a special young collection, where all objects that have lived long 
+enough in the nursery are promoted (moved) to the old space, thus freeing up the nursery 
+for more object allocation. When the old space becomes full garbage is collected there, a 
+process called an old collection. The reasoning behind a nursery is that most objects are 
+temporary and short lived. A young collection is designed to be swift at finding newly 
+allocated objects that are still alive and moving them away from the nursery. Typically, a 
+young collection frees a given amount of memory much faster than an old collection or a 
+garbage collection of a single-generational heap (a heap without a nursery).

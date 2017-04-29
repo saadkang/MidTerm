@@ -1,28 +1,98 @@
 Please answer the below Data Structure Questions:
 
 why do we need data structure?
+Ans: Data structure gives the coding purpose and decipline.
+
 List out the areas in which data structures are applied extensively?
+Ans: Compiler Design, Operation System, Database Management System,
+Statistical Analysis Package...
+
 what is an Array?
+Ans: A container object that holds a fixed number of values of a single type.
+
+
 what is the difference between the Array and ArrayList?
+Ans: Difference between array and ArrayList in java include eight points namely Resizable, Performance, Traversal,
+Primitives, Length, Type-Safety, Adding elements, Multi-dimensional.
+
 what is LinkedList?
+Ans: A linked list is a linear data structure where each element is a separate object. Each element (we will call it a node)
+of a list is comprising of two items - the data and a reference to the next node. The last node has a reference to null.
+The entry point into a linked list is called the head of the list.
+
 what is queue?
+Ans: Queue interface is a subtype of the java.util.Collection interface. It represents an ordered list of objects just like a List,
+but its intended use is slightly different. A queue is designed to have elements inserted at the end of the queue, and elements removed
+from the beginning of the queue.
+
 what is stack?
+Ans: A stack is a data structure that allows data to be inserted (a 'push' operation), and removed (a 'pop' operation). Many stacks also
+support a read ahead (a 'peek' operation), which reads data without removing it. A stack is a LIFO-queue, meaning that the last data to be
+inserted will be the first data to be removed.
+
 what is FIFO and LIFO?
+Ans: FIFO is a contraction of the term "first in, first out," and means that the goods first added to inventory are assumed to be the first
+goods removed from inventory for sale. LIFO is a contraction of the term "last in, first out," and means that the goods last added to inventory
+are assumed to be the first goods removed from inventory for sale.
+
 what is the order of complexity?
+Ans: The most common metric for calculating time complexity is Big O notation. This removes all constant factors so that the running time can be
+estimated in relation to N as N approaches infinity.
+
 what is the best case to search an element from an array?
+Ans: 
+
 what is the worst case to search an element from an array?
+Ans: 
+
 what is tree in data structure?
+Ans: a tree is a widely used abstract data type (ADT)—or data structure implementing this ADT—that simulates a hierarchical tree structure,
+with a root value and subtrees of children with a parent node, represented as a set of linked nodes.
+
 what is graph in data structure?
+Ans: A set of items connected by edges. Each item is called a vertex or node. Formally, a graph is a set of vertices and a binary relation
+between vertices, adjacency.
+
 what is the difference between the HashTable and HashMap?
+Ans: 1)HashTable is synchronized whereas HashMap is not.
+2)Another difference is that iterator in the HashMap is fail-safe while the enumerator for the HashTable isn't. If you change the map while
+iterating, you'll know.
+3)HashMap permits null values in it, while HashTable doesn't.
+
 What are the major data structures used in the following areas : RDBMS, Network data model and Hierarchical data model.
+Ans: 
+
 How HashMap works in java?
+Ans: When we call put method, hashcode() method of the key object is called so that hash function of the map can find a bucket location to store
+value object, which is actually an index of the internal array, known as the table.
+
 What is ArrayIndexOutOfBoundsException in java? When it occurs?
+Ans: All array accesses are checked at run time; an attempt to use an index that is less than zero or greater than or equal to the length of the
+array causes an ArrayIndexOutOfBoundsException to be thrown.
+
 What are the different ways of copying an array into another array?
+Ans: System.arraycopy
+[name of array].clone
+Arrays.copyof()
+
 What is difference between an array and a linked list?
+Ans: In array, each element is independent, no connection with previous element or with its location. In Linked list, location or address of elements
+is stored in the link part of previous element/node. In array, no pointers are used like linked list so no need of extra space in memory for pointer.
+
 What is DFS and BFS?
+Ans: DFS: Distributed File System (DFS) is a set of client and server services that allow an organization using Microsoft Windows servers to organize
+many distributed SMB file shares into a distributed file system.
+BFS: he aim of BFS algorithm is to traverse the graph as close as possible to the root node. Queue is used in the implementation of the breadth first search.
+
 What is Recursion?
+Ans: Recursion is a basic programming technique you can use in Java, in which a method calls itself to solve some problem. A method that uses this technique
+is recursive. 
+
 What is Big-(O)-notation?
+Ans: Big O notation is used in Computer Science to describe the performance or complexity of an algorithm. Big O specifically describes the worst-case scenario, and can be used to describe the execution time required or the space used (e.g. in memory or on disk) by an algorithm.
+
 Outlined different kind of sorting algorithm with time complexity?
+Ans: 
 
 Draw a table with time complexity in which it will summarize all the data structure feature's advantages and disadvantages.
   a)In terms of Accessing element.
