@@ -1,6 +1,8 @@
 package design;
 
-public class EmployeeInfo{
+import java.util.Scanner;
+
+public class EmployeeInfo implements Employee{
 	
  /*This class can be implemented from Employee interface then add additional methods in EmployeeInfo class.
  * Also, Employee interface can be implemented into an abstract class.So create an Abstract class
@@ -17,6 +19,9 @@ public class EmployeeInfo{
 	 * declare few static and final fields and some non-static fields
 	 */
 	static String companyName;
+	public static String companyProduct = "Laptop";
+	public int companyEmployee = 10000;
+	public static final String companyArea = "800000 sq ft";
 	
 	/*
 	 * You must implement the logic for below 2 methods and 
@@ -28,12 +33,18 @@ public class EmployeeInfo{
 	 * you must have multiple constructor.
 	 * Must implement below constructor.
 	 */
-	public EmployeeInfo(int employeeId){
-		
+	public EmployeeInfo(int companyEmployee){
+		this.companyEmployee = companyEmployee;
 	}
-    public EmployeeInfo(String name, int employeeId){
-		
+    public EmployeeInfo(String companyProduct){
+		this.companyProduct = companyProduct;
 	}
+    public static String getcompanyName(){
+    	return companyName;
+    }
+    public static String getcompanyArea(){
+    	return companyArea;
+    }
 	
 	/*
 	 * This methods should calculate Employee bonus based on salary and performance.
@@ -45,6 +56,16 @@ public class EmployeeInfo{
 	 */
 	public static int calculateEmployeeBonus(){
 		int total=0;
+		int salary = 100000;
+		int jobWellDone = 10/100;
+		int jobOnAverage = 5/100;
+		if(jobWellDone > jobOnAverage){
+			total = salary / jobWellDone;
+			System.out.println("Better Employee Bonus: "+total);
+		}else{
+			total = salary / jobOnAverage;
+			System.out.println("Average Employee Bonus: "+total);
+		}
 		return total;
 	}
 	
@@ -57,6 +78,72 @@ public class EmployeeInfo{
 	 */
 	public static int calculateEmployeePension(){
 		int total=0;
+		int salary = 100000;
+		int firstYearWork = 1;
+		int secondYearWork = 2;
+		int firstYearPension = 5/100;
+		int secondYearPension = 10/100;
+		if(secondYearWork > firstYearWork && secondYearPension > firstYearPension){
+			total = salary / secondYearPension;
+			System.out.println("Pension for 2nd year: "+total);
+		}else{
+			total = salary / firstYearPension;
+			System.out.println("Pension for 1st year: "+total);
+		}
 		return total;
+	}
+	@Override
+	public int employeeId() {
+		int employeeid = 5;
+		while(employeeid != 0){
+			System.out.println(employeeId());
+		}
+		return 0;
+	}
+	
+	public String employeeName() {
+		String employeeName = "Mario";
+		return null;
+	}
+	
+	public void assignDepartment() {
+		String department = "IT";
+		if("IT".equals(department)){
+			System.out.println("Mario's department: "+department);
+		}else if("Leader".equals(department)){
+			System.out.println("Brittany's department: "+department);
+		}
+		
+	}
+	
+	public int calculateSalary() {
+		int workHours = 0;
+		int rate = 20;
+		int overTime;
+		int total;
+		Scanner sc = new Scanner(System.in);
+		workHours = sc.nextInt();
+		if(workHours > 15 && workHours < 40){
+			total = workHours * rate;
+		}else if(workHours > 40){
+			overTime = workHours -= 40;
+			total = (int) (workHours * rate + overTime * 1.5);
+		}
+		return 0;
+	}
+	
+	public void benefitLayout() {
+		String benefit;
+		int option = 0;
+		switch(option){
+		case 1:
+			benefit = "Home Mortgage";
+			System.out.println("Company will pay 60% of your mortgage and when needed help with relocation");
+			break;
+		case 2:
+			benefit = "Company Car";
+			System.out.println("Company will buy you a car of your choosing");
+		}
+		
 	}
 }
